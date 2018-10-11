@@ -38,6 +38,12 @@ module.exports = {
 
 	},
 
+	async replyEmbed( m, text, embedUrl ) {
+
+		return m.reply( text, { embed:{ image:{ url:embedUrl } } } );
+
+	},
+
 	embedUrl( embed ) {
 
 		if ( embed.url) return embed.url;
