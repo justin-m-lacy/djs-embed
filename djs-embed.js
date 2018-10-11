@@ -4,9 +4,9 @@ module.exports = {
 	getSingle( m ) {
 
 		if ( m.attachments && m.attachments.size > 0 ) {
-			return this.attachToUrl( m.attachments.first() );
+			return this.attachUrl( m.attachments.first() );
 		}
-		if ( m.embeds && m.embeds.length > 0 ) return this.embedToUrl( m.embeds[0] );
+		if ( m.embeds && m.embeds.length > 0 ) return this.embedUrl( m.embeds[0] );
 
 	},
 
@@ -19,7 +19,7 @@ module.exports = {
 
 			for( let v in m.attachments.values() ) {
 
-				url = this.attachToUrl( v );
+				url = this.attachUrl( v );
 				if ( url ) a.push( url );
 			}
 
@@ -29,7 +29,7 @@ module.exports = {
 
 			for( let v of m.embeds ) {
 	
-				url = this.embedToUrl( v );
+				url = this.embedUrl( v );
 				if ( url ) a.push( url );
 			}
 		}
