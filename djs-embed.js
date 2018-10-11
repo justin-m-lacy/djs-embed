@@ -1,7 +1,7 @@
 module.exports = {
 
 
-	getSingleUrl( m ) {
+	getSingle( m ) {
 
 		if ( m.attachments && m.attachments.size > 0 ) {
 			return this.attachToUrl( m.attachments.first() );
@@ -10,7 +10,7 @@ module.exports = {
 
 	},
 
-	getAllUrls() {
+	getAllUrls( m ) {
 
 		let a = [];
 		let url;
@@ -38,14 +38,14 @@ module.exports = {
 
 	},
 
-	embedToUrl( embed ) {
+	embedUrl( embed ) {
 
 		if ( embed.url) return embed.url;
 		if ( embed.image ) return embed.image.url;
 
 	},
 
-	attachToUrl( attach ) {
+	attachUrl( attach ) {
 		return attach.url;
 	}
 
