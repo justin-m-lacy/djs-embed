@@ -1,0 +1,26 @@
+{
+  "name": "djs-embed",
+  "version": "0.1.0",
+  "description": "Simplifies images/media/links in discordjs by using a uniform interface to retrieve and access both.",
+  "main": "djs-embed.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lerpinglemur/djs-embed.git"
+  },
+  "keywords": [
+    "discordjs",
+    "discord",
+    "bot",
+    "embed",
+    "attachment"
+  ],
+  "author": "lerpinglemur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lerpinglemur/djs-embed/issues"
+  },
+  "homepage": "https://github.com/lerpinglemur/djs-embed#readme"
+}

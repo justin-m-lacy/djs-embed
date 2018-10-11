@@ -1,0 +1,4 @@
+*.code-workspace
+*.vscode
+*.lnk
+package-lock.json
