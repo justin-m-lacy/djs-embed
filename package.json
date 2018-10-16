@@ -1,6 +1,6 @@
 {
   "name": "djs-embed",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Simplifies images/media/links in discordjs by using a uniform interface to retrieve and access both.",
   "main": "djs-embed.js",
   "scripts": {
