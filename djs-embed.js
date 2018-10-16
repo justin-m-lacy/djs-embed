@@ -46,6 +46,7 @@ module.exports = {
 
 	embedUrl( embed ) {
 
+		if ( embed.proxyURL ) return embed.proxyURL;
 		if ( embed.url) return embed.url;
 		if ( embed.image ) return embed.image.url;
 
